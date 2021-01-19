@@ -6,10 +6,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "BSDataLoadingViewController.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface FavoritesViewController : UIViewController
+@interface FavoritesViewController : BSDataLoadingViewController<UITableViewDelegate, UITableViewDataSource>
 
 @end
 

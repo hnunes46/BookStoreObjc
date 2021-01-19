@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		6E88CC5F25B70DCE009C08E6 /* BSDataLoadingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E88CC5E25B70DCE009C08E6 /* BSDataLoadingViewController.m */; };
 		6E88CC6425B72F25009C08E6 /* PersistenceManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E88CC6325B72F25009C08E6 /* PersistenceManager.m */; };
+		6E88CC6A25B74D7E009C08E6 /* FavoriteBooksTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E88CC6925B74D7E009C08E6 /* FavoriteBooksTableViewCell.m */; };
 		6E912BBF25B045D90050311C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E912BBE25B045D90050311C /* AppDelegate.m */; };
 		6E912BC225B045D90050311C /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E912BC125B045D90050311C /* SceneDelegate.m */; };
 		6E912BC825B045D90050311C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E912BC625B045D90050311C /* Main.storyboard */; };
@@ -33,6 +34,8 @@
 		6E88CC5E25B70DCE009C08E6 /* BSDataLoadingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BSDataLoadingViewController.m; sourceTree = "<group>"; };
 		6E88CC6225B72F25009C08E6 /* PersistenceManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PersistenceManager.h; sourceTree = "<group>"; };
 		6E88CC6325B72F25009C08E6 /* PersistenceManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PersistenceManager.m; sourceTree = "<group>"; };
+		6E88CC6825B74D7E009C08E6 /* FavoriteBooksTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FavoriteBooksTableViewCell.h; sourceTree = "<group>"; };
+		6E88CC6925B74D7E009C08E6 /* FavoriteBooksTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FavoriteBooksTableViewCell.m; sourceTree = "<group>"; };
 		6E912BBA25B045D90050311C /* BookStoreObjc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BookStoreObjc.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E912BBD25B045D90050311C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		6E912BBE25B045D90050311C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -94,6 +97,24 @@
 				6E88CC6325B72F25009C08E6 /* PersistenceManager.m */,
 			);
 			path = UserDefaults;
+			sourceTree = "<group>";
+		};
+		6E88CC6625B74D2A009C08E6 /* CollectionViews */ = {
+			isa = PBXGroup;
+			children = (
+				6EB5420D25B19A310034CD14 /* BookStoreCollectionViewCell.h */,
+				6EB5420E25B19A310034CD14 /* BookStoreCollectionViewCell.m */,
+			);
+			path = CollectionViews;
+			sourceTree = "<group>";
+		};
+		6E88CC6725B74D3C009C08E6 /* TableViews */ = {
+			isa = PBXGroup;
+			children = (
+				6E88CC6825B74D7E009C08E6 /* FavoriteBooksTableViewCell.h */,
+				6E88CC6925B74D7E009C08E6 /* FavoriteBooksTableViewCell.m */,
+			);
+			path = TableViews;
 			sourceTree = "<group>";
 		};
 		6E912BB125B045D90050311C = {
@@ -222,8 +243,8 @@
 		6EB5420B25B199E70034CD14 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
-				6EB5420D25B19A310034CD14 /* BookStoreCollectionViewCell.h */,
-				6EB5420E25B19A310034CD14 /* BookStoreCollectionViewCell.m */,
+				6E88CC6725B74D3C009C08E6 /* TableViews */,
+				6E88CC6625B74D2A009C08E6 /* CollectionViews */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -323,6 +344,7 @@
 				6EB5420F25B19A310034CD14 /* BookStoreCollectionViewCell.m in Sources */,
 				6E912BF825B05FD60050311C /* Book.m in Sources */,
 				6E912BBF25B045D90050311C /* AppDelegate.m in Sources */,
+				6E88CC6A25B74D7E009C08E6 /* FavoriteBooksTableViewCell.m in Sources */,
 				6E912BDF25B04BFF0050311C /* BooksListViewController.m in Sources */,
 				6E912BF425B057120050311C /* VolumeInfo.m in Sources */,
 				6EA6031925B5D29B0013EEA7 /* NetworkManager.m in Sources */,

@@ -8,6 +8,7 @@
 #import "BookDetailViewController.h"
 #import "BSButton.h"
 #import <SafariServices/SafariServices.h>
+#import "PersistenceManager.h"
 
 @interface BookDetailViewController ()
 
@@ -131,6 +132,7 @@
     _favoriteButton.translatesAutoresizingMaskIntoConstraints = NO;
     [_favoriteButton setTitleColor:UIColor.systemBlueColor forState:UIControlStateNormal];
     [_favoriteButton addTarget:self action:@selector(favoriteButtonTapped) forControlEvents:UIControlEventTouchUpInside];
+    [_favoriteButton setTitle:@"Add Favorite" forState:UIControlStateNormal];
     
     [_favoriteButton.topAnchor constraintEqualToAnchor:_authorsLabel.bottomAnchor constant:0].active = YES;
     [_favoriteButton.leadingAnchor constraintEqualToAnchor:_coverImageView.trailingAnchor constant:8].active = YES;
@@ -177,7 +179,7 @@
 
 
 - (void) favoriteButtonTapped {
-    
+    [PersistenceManager.shared addFavoriteBook:_book];
 }
 
 
